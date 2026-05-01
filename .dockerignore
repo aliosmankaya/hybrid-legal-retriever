@@ -1,0 +1,7 @@
+.venv/
+.idea/
+notebooks/
+.gitignore
+.python-version
+LICENSE
+README.md
