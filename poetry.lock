@@ -2636,6 +2636,27 @@ files = [
 ]
 
 [[package]]
+name = "requests"
+version = "2.34.1"
+description = "Python HTTP for Humans."
+optional = false
+python-versions = ">=3.10"
+files = [
+    {file = "requests-2.34.1-py3-none-any.whl", hash = "sha256:bf38a3ff993960d3dd819c08862c40b3c703306eb7c744fcd9f4ddbb95b548f0"},
+    {file = "requests-2.34.1.tar.gz", hash = "sha256:0fc5669f2b69704449fe1552360bd2a73a54512dfd03e65529157f1513322beb"},
+]
+
+[package.dependencies]
+certifi = ">=2023.5.7"
+charset_normalizer = ">=2,<4"
+idna = ">=2.5,<4"
+urllib3 = ">=1.26,<3"
+
+[package.extras]
+socks = ["PySocks (>=1.5.6,!=1.5.7)"]
+use-chardet-on-py3 = ["chardet (>=3.0.2,<8)"]
+
+[[package]]
 name = "rich"
 version = "15.0.0"
 description = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
@@ -3287,4 +3308,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "15e7a0a5e909b1a4a613a0d40884f08ecb9bf1204de8032bec6c34ec7ade17fb"
+content-hash = "5358bf1ad201e4f9cbeb150d1908854c248992455c86c7a2168afd54b699bf0e"

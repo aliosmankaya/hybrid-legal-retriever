@@ -1,0 +1,542 @@
+[
+  {
+    "question": "Araçların tanınmasına yarayan işaretler nelerdir?",
+    "relevant_chunk_id": "trafik_kanunu_29",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 29
+  },
+  {
+    "question": "Tescil belgesi verilebilmek için hangi şartlar aranır?",
+    "relevant_chunk_id": "trafik_kanunu_29",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 29
+  },
+  {
+    "question": "Trafik zabıtasının görev ve yetki sınırını belirten madde hangi tarihte değiştirilmiştir?",
+    "relevant_chunk_id": "trafik_kanunu_7",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 7
+  },
+  {
+    "question": "Trafik zabıtasına ait yetkinin sınırları nelerdir?",
+    "relevant_chunk_id": "trafik_kanunu_7",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 7
+  },
+  {
+    "question": "Manevralarda park yapmış taşıtlar arasından çıkarken, duraklarken veya park yaparken sürücüler hangi yönde yanaşamazlar?",
+    "relevant_chunk_id": "trafik_kanunu_71",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 71
+  },
+  {
+    "question": "Manevralarda geriye dönmek veya geriye gitmek hangi durumlarda yasaktır?",
+    "relevant_chunk_id": "trafik_kanunu_71",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 71
+  },
+  {
+    "question": "Taşıt yolu üzerinde duraklamanın yasaklandığı yerlerde duraklama yasaktır mı?",
+    "relevant_chunk_id": "trafik_kanunu_63",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 63
+  },
+  {
+    "question": "Yaya ve okul geçitleri ile diğer geçitlerde duraklama yasaktır mı?",
+    "relevant_chunk_id": "trafik_kanunu_63",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 63
+  },
+  {
+    "question": "Geçiş üstünlüğüne sahip bir araç sürücüsünün davranışları hakkında bilgi verir misiniz?",
+    "relevant_chunk_id": "trafik_kanunu_58",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 58
+  },
+  {
+    "question": "Dar taşıt yolları ile trafiğin yoğun olduğu karayollarında geçmek için hangi davranışlar sergilenmelidir?",
+    "relevant_chunk_id": "trafik_kanunu_58",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 58
+  },
+  {
+    "question": "Motorlu araçların muayenelerinin yaptırılması hangi süreler içinde zorunludur?",
+    "relevant_chunk_id": "trafik_kanunu_36",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 36
+  },
+  {
+    "question": "Motorlu araçlar, belirli zamanlarda nasıl bir şekilde muayene edilir?",
+    "relevant_chunk_id": "trafik_kanunu_36",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 36
+  },
+  {
+    "question": "Tescilsiz araçların geçici olarak kullanılması için hangi şartın yerine getirilmesi gereklidir?",
+    "relevant_chunk_id": "trafik_kanunu_27",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 27
+  },
+  {
+    "question": "Geçici trafik belgeleri ve geçici tescil plakalarının iptali sonrasında araçlar ne kadar süreyle trafikten men ediliyor?",
+    "relevant_chunk_id": "trafik_kanunu_27",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 27
+  },
+  {
+    "question": "Birinci fıkra hükmüne aykırılık tespit edilen araçlar neye göre trafikten menedilir?",
+    "relevant_chunk_id": "trafik_kanunu_23",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 23
+  },
+  {
+    "question": "Karayolları Genel Müdürlüğünün görevleri nelerdir?",
+    "relevant_chunk_id": "trafik_kanunu_9",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 9
+  },
+  {
+    "question": "Bu Kanunla ilgili olarak Karayolları Genel Müdürlüğünün yetkileri nelerdir?",
+    "relevant_chunk_id": "trafik_kanunu_9",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 9
+  },
+  {
+    "question": "Trafik zabıtasının görev ve yetkileri nelerdir?",
+    "relevant_chunk_id": "trafik_kanunu_8",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 8
+  },
+  {
+    "question": "Genel zabıtanın görev ve yetkileri nelerdir?",
+    "relevant_chunk_id": "trafik_kanunu_8",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 8
+  },
+  {
+    "question": "Askeri maksatlarla kullanılan Türk Silahlı Kuvvetlerine ait araçlar hangi mercie bağlı olarak tescil edilir?",
+    "relevant_chunk_id": "trafik_kanunu_24",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 24
+  },
+  {
+    "question": "İş makinesi türünden araçların tescili hangi durumlarda ilgili kuruluşlarca yapılır?",
+    "relevant_chunk_id": "trafik_kanunu_24",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 24
+  },
+  {
+    "question": "Araçlara reklam, yazı, işaret, resim, şekil, sembol, ilan, flama, bayrak ve benzerlerinin takılması yasaktır mı?",
+    "relevant_chunk_id": "trafik_kanunu_28",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 28
+  },
+  {
+    "question": "Araçların dışında bulundurulması zorunlu olan işaretler nelerdir?",
+    "relevant_chunk_id": "trafik_kanunu_28",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 28
+  },
+  {
+    "question": "Devlet malı araçların tescil plakaları hangi renkte olur?",
+    "relevant_chunk_id": "trafik_kanunu_30",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 30
+  },
+  {
+    "question": "Trafikten men edilecek araçlar için ne tür para cezası uygulanır?",
+    "relevant_chunk_id": "trafik_kanunu_30",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 30
+  },
+  {
+    "question": "Bir trafik işaretiyle izin verilmedikçe kamyon, otobüs ve bunların katarları park edilebilir mi?",
+    "relevant_chunk_id": "trafik_kanunu_65",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 65
+  },
+  {
+    "question": "Kamyon, otobüs ve bunların katarlarının park edilmesinin yasak olduğu yerler nelerdir?",
+    "relevant_chunk_id": "trafik_kanunu_65",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 65
+  },
+  {
+    "question": "Sürücüler, yaya veya okul geçitlerine yaklaşırken ne yapmalı?",
+    "relevant_chunk_id": "trafik_kanunu_78",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 78
+  },
+  {
+    "question": "Bu madde hükümlerine uymayan sürücülere hangi idari para cezası uygulanmaktadır?",
+    "relevant_chunk_id": "trafik_kanunu_78",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 78
+  },
+  {
+    "question": "Trafik ne demektir?",
+    "relevant_chunk_id": "trafik_kanunu_4",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 4
+  },
+  {
+    "question": "Karayolu yapısı nedir?",
+    "relevant_chunk_id": "trafik_kanunu_4",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 4
+  },
+  {
+    "question": "Yayaların uyacakları kurallar hangi kanunda belirlenmiştir?",
+    "relevant_chunk_id": "trafik_kanunu_72",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 72
+  },
+  {
+    "question": "Sürücü belgesi iptal edilenlerin hangi şartlara göre eğitim alabilirler?",
+    "relevant_chunk_id": "trafik_kanunu_72",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 72
+  },
+  {
+    "question": "Araç muayene raporu için hangi belgeler ibraz edilir?",
+    "relevant_chunk_id": "trafik_kanunu_26",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 26
+  },
+  {
+    "question": "Zorunlu mali sorumluluk sigortası için ne tür belge ibraz edilebilir?",
+    "relevant_chunk_id": "trafik_kanunu_26",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 26
+  },
+  {
+    "question": "Bir motorlu aracın katıldığı bir kazada birden fazla kişi tazminatla yükümlü bulunuyorsa, bunlar müteselsil olarak sorumlu tutulur mu?",
+    "relevant_chunk_id": "trafik_kanunu_92",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 92
+  },
+  {
+    "question": "Birden fazla kişinin sorumlu olduğu durumlarda, bunlardan hangileri kusurları oranında zarara katlanırlar?",
+    "relevant_chunk_id": "trafik_kanunu_92",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 92
+  },
+  {
+    "question": "Trafikle ilgili diğer kuralları ve tehlikeli madde taşıyan araçları hangi yönetmelikte gösterilir?",
+    "relevant_chunk_id": "trafik_kanunu_84",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 84
+  },
+  {
+    "question": "Taşımada sınır ve gabari ölçüleri ile yük ve yolcu taşınması ile ilgili diğer kurallar ve şartlar hangi kanunda gösterilir?",
+    "relevant_chunk_id": "trafik_kanunu_84",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 84
+  },
+  {
+    "question": "Kendisinin veya eylemlerinden sorumlu tutulduğu kişilerin kusuru bulunmaksızın kazayı kimin ispat edebilir?",
+    "relevant_chunk_id": "trafik_kanunu_90",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 90
+  },
+  {
+    "question": "Araçtaki bir bozukluk kazayı etkilemiş olmaksızın, kazanın bir mücbir sebepten veya zarar görenin veya bir üçüncü kişinin ağır kusurundan ileri geldiğini kimler ispat edebilir?",
+    "relevant_chunk_id": "trafik_kanunu_90",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 90
+  },
+  {
+    "question": "Bisiklet sürenlerin el kullanımı ile ilgili ne söylenmektedir?",
+    "relevant_chunk_id": "trafik_kanunu_70",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 70
+  },
+  {
+    "question": "Bir bisikletin sürücüsü taşıt yolunda yan yana iki bisikleti nasıl süremez?",
+    "relevant_chunk_id": "trafik_kanunu_70",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 70
+  },
+  {
+    "question": "Sürücüler, yönetmelikte belirtilen hız sınırlarını aşmamaları için hangi zorunlulukla karşı karşıyadırlar?",
+    "relevant_chunk_id": "trafik_kanunu_54",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 54
+  },
+  {
+    "question": "Hız ölçen teknik cihaz veya çeşitli teknik usullerle yapılan tespit sonucu yönetmelikte belirlenen hız sınırlarını aşıp 66 km/s ve daha fazla hızla giden sürücülere ne kadar para cezası verilir?",
+    "relevant_chunk_id": "trafik_kanunu_54",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 54
+  },
+  {
+    "question": "Bu Kanunla ilgili Karayolları Trafik Yönetmeliği, hangi bakanlıkların görüşü alınmak suretiyle çıkarılır?",
+    "relevant_chunk_id": "trafik_kanunu_139",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 139
+  },
+  {
+    "question": "Motorlu taşıt sürücüleri kurslarında kimler tarafından basılı kağıtlarla plakalar kullanılır?",
+    "relevant_chunk_id": "trafik_kanunu_135",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 135
+  },
+  {
+    "question": "Basılı kağıtlar ile plakaların maliyet bedeli hangi kuruluşlar tarafından tespit edilir?",
+    "relevant_chunk_id": "trafik_kanunu_135",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 135
+  },
+  {
+    "question": "Araçlarda ses, müzik, görüntü ve haberleşme cihazları yönetmelikte gösterilen şartlara uygun olarak ve kamunun rahat ve huzurunu bozmayacak şekilde kullanılabilir. Bu kurala uymayanlar hangi cezaya maruz kalırlar?",
+    "relevant_chunk_id": "trafik_kanunu_76",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 76
+  },
+  {
+    "question": "Araçlarda Kanun ve yönetmelikte belirtilen şartlara uymayan ses, müzik, görüntü ve haberleşme cihazları ile sürücünün izleme ve kullanma sahası içinde kalan görüntü cihazlarını bulundurmak veya kullanmak yasaktır. Bu kurala uymayanlar hangi cezaya maruz kalırlar?",
+    "relevant_chunk_id": "trafik_kanunu_76",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 76
+  },
+  {
+    "question": "İçişleri Bakanlığı ile işbirliği içinde çalışması gereken ilgili bakanlık ve kuruluşlar hangileridir?",
+    "relevant_chunk_id": "trafik_kanunu_134",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 134
+  },
+  {
+    "question": "İhtiyari mali sorumluluk sigortası sözleşmesi yapmaya yetkili olan sigorta şirketleri kimlerdir?",
+    "relevant_chunk_id": "trafik_kanunu_104",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 104
+  },
+  {
+    "question": "Kanun numarası nedir?",
+    "relevant_chunk_id": "trafik_kanunu_1",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 1
+  },
+  {
+    "question": "Bu kanun hangi tarihte kabul edilmiştir?",
+    "relevant_chunk_id": "trafik_kanunu_1",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 1
+  },
+  {
+    "question": "Sigortalı aracı işletenlerin sigortacıya durum bildirmeleri için ne kadar süre verilir?",
+    "relevant_chunk_id": "trafik_kanunu_98",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 98
+  },
+  {
+    "question": "Bu maddeye uymayanlar hangi para cezası ile cezalandırırlar?",
+    "relevant_chunk_id": "trafik_kanunu_98",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 98
+  },
+  {
+    "question": "Aracın çalındığını veya gasbedildiğini bilerek binen yolculara karşı sorumluluk, genel hangi hükümlere tabidir?",
+    "relevant_chunk_id": "trafik_kanunu_111",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 111
+  },
+  {
+    "question": "Araç sahipleri araçlarını yetkili kuruluşa tescil ettirmek zorundadırlar. Ancak hangi araçlar bu zorunluluktan muaf tutulmuşlardır?",
+    "relevant_chunk_id": "trafik_kanunu_21",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 21
+  },
+  {
+    "question": "Tescil edilebilirlik koşulları nelerdir?",
+    "relevant_chunk_id": "trafik_kanunu_21",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 21
+  },
+  {
+    "question": "Trafik suçu işleyenler hakkında kimlerce tutanak düzenlenir?",
+    "relevant_chunk_id": "trafik_kanunu_118",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 118
+  },
+  {
+    "question": "Trafik suçlarının bir arada işlenmesi halinde ne yapılır?",
+    "relevant_chunk_id": "trafik_kanunu_118",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 118
+  },
+  {
+    "question": "Sürücüler kavşaklara yaklaşırken ne yapmalı?",
+    "relevant_chunk_id": "trafik_kanunu_55",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 55
+  },
+  {
+    "question": "Hızlarını kullandıkları aracın yük ve teknik özelliğine, görüş, yol, hava ve trafik durumuna uydurmak için hangi şartlar önemlidir?",
+    "relevant_chunk_id": "trafik_kanunu_55",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 55
+  },
+  {
+    "question": "Sürücü belgesi alacakların en az hangi düzeyde eğitim almış olmaları gerekir?",
+    "relevant_chunk_id": "trafik_kanunu_44",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 44
+  },
+  {
+    "question": "Sürücü kurslarında teorik ve uygulamalı eğitimini tamamlayıp sürücü sınavlarını başararak, motorlu taşıt sürücüsü sertifikası almak için kaç farklı sınav geçmek gerekir?",
+    "relevant_chunk_id": "trafik_kanunu_44",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 44
+  },
+  {
+    "question": "Karayolları Trafik Kanunu'nda Zamanaşımı nasıl işliyor?",
+    "relevant_chunk_id": "trafik_kanunu_112",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 112
+  },
+  {
+    "question": "Madde 112'de Zamanaşımı ile ilgili hangi hükümler yer alıyor?",
+    "relevant_chunk_id": "trafik_kanunu_112",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 112
+  },
+  {
+    "question": "Belediye sınırları içindeki karayolları kenarında yapılacak veya açılacak yapı ve tesisler için hangi kurallara uyulması zorunludur?",
+    "relevant_chunk_id": "trafik_kanunu_20",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 20
+  },
+  {
+    "question": "Belediyelerce izin verilmesinde trafik güvenliği bakımından Yönetmelikte belirlenen şartların yerine getirilmesi nasıl sağlanır?",
+    "relevant_chunk_id": "trafik_kanunu_20",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 20
+  },
+  {
+    "question": "Sürücü kursu açma izni kimlere verilir?",
+    "relevant_chunk_id": "trafik_kanunu_127",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 127
+  },
+  {
+    "question": "Araçların terk edilmesi, hasar görmesi veya uzun süre park edilmesinin hukuki sonuçları nelerdir?",
+    "relevant_chunk_id": "trafik_kanunu_131",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 131
+  },
+  {
+    "question": "Motorlu araçlarla ilgili mesleki faaliyette bulunan teşebbüslerin sahibi, hangi durumlarda işleten gibi sorumlu tutulur?",
+    "relevant_chunk_id": "trafik_kanunu_108",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 108
+  },
+  {
+    "question": "Zorunlu mali sorumluluk sigortası yaptırmakla yükümlü olan teşebbüs sahipleri hangi durumları kapsayacak şekilde sigorta yaptırma mecburiyetindedir?",
+    "relevant_chunk_id": "trafik_kanunu_108",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 108
+  },
+  {
+    "question": "İl sınırları içinde trafik düzeni ve güvenliği bakımından hangi kuruluşların temsilcileri yer alır?",
+    "relevant_chunk_id": "trafik_kanunu_14",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 14
+  },
+  {
+    "question": "Valinin başkanlığında hangi kuruluşların temsilcilerinin yer aldığı İl Trafik Komisyonu kurulur?",
+    "relevant_chunk_id": "trafik_kanunu_14",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 14
+  },
+  {
+    "question": "Belediyeler hangi kuruluşlarla işbirliği yaparak Kanunla verilen görevlerini yürütür?",
+    "relevant_chunk_id": "trafik_kanunu_12",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 12
+  },
+  {
+    "question": "Karayolları Trafik Kanunu'nda belediyelere ne gibi görevler verilmiştir?",
+    "relevant_chunk_id": "trafik_kanunu_12",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 12
+  },
+  {
+    "question": "Karayollarında trafik nasıl akar?",
+    "relevant_chunk_id": "trafik_kanunu_49",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 49
+  },
+  {
+    "question": "Araçları hangi yönde kullanmak gerekir?",
+    "relevant_chunk_id": "trafik_kanunu_49",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 49
+  },
+  {
+    "question": "İl ve ilçe trafik komisyonlarının görevleri nelerdir?",
+    "relevant_chunk_id": "trafik_kanunu_13",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 13
+  },
+  {
+    "question": "İl ve ilçe trafik komisyonları ne amaçla kurulmuştur?",
+    "relevant_chunk_id": "trafik_kanunu_13",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 13
+  },
+  {
+    "question": "Er ve erbaş sınıfından askeri araç sürücülerinin özel sınavları ve belge verme işlemleri hangi bakanlık tarafından yönetilir?",
+    "relevant_chunk_id": "trafik_kanunu_46",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 46
+  },
+  {
+    "question": "Askeri araç sürücülüğü belgesi, askerlik süresi bitiminden sonra geçerlidir mi?",
+    "relevant_chunk_id": "trafik_kanunu_46",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 46
+  },
+  {
+    "question": "Sürücü kurslarında teorik eğitimini tamamlayan sürücü adaylarının teorik sınavları nerede yapılır?",
+    "relevant_chunk_id": "trafik_kanunu_45",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 45
+  },
+  {
+    "question": "Uygulamalı sürücü sınavında başarılı olanlara ne verilir?",
+    "relevant_chunk_id": "trafik_kanunu_45",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 45
+  },
+  {
+    "question": "Kanun metninde \"Yönetmelikte yer alacak diğer esaslar\" ifadesi ne anlama geliyor?",
+    "relevant_chunk_id": "trafik_kanunu_124",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 124
+  },
+  {
+    "question": "Yönetmelik hangi konularda esaslar belirleyecektir?",
+    "relevant_chunk_id": "trafik_kanunu_124",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 124
+  },
+  {
+    "question": "Bir araç üzerinde yapılan teknik değişiklikler, hangi durumlarda trafikten menedilir?",
+    "relevant_chunk_id": "trafik_kanunu_34",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 34
+  },
+  {
+    "question": "İçişleri Bakanlığı'nın görevlerinden hangisi, araç sahiplerinin araçlarda bulundurması gereken belge ve gereçleri kontrol etmeyi içerir?",
+    "relevant_chunk_id": "trafik_kanunu_6",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 6
+  },
+  {
+    "question": "İçişleri Bakanlığı'nın görevlerinden hangisi, trafik kazası neticesinde hastalanan veya yaralananların bakımlarını sağlayacak tedbirlerin alınmasına yardımcı olmak ve yakınlarına haber vermekle ilgilidir?",
+    "relevant_chunk_id": "trafik_kanunu_6",
+    "kanun": "Karayolları Trafik Kanunu",
+    "madde_no": 6
+  }
+]
