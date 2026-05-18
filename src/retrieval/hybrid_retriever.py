@@ -1,5 +1,5 @@
-from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient
+from sentence_transformers import SentenceTransformer
 
 from .bm25_retriever import bm25_search
 
@@ -8,15 +8,15 @@ def dense_search(
     query: str, model: SentenceTransformer, client: QdrantClient, top_k: int = 20
 ) -> list[tuple[str, float]]:
     query_emb = model.encode([query])[0].tolist()
-    results = client.search(
-        collection_name="legal_docs", query_vector=query_emb, limit=top_k
-    )
-    return [(str(r.id), r.score) for r in results]
+    results = client.query_points(
+        collection_name="legal_docs", query=query_emb, limit=top_k
+    ).points
+    return [(str(r.payload["chunk_id"]), r.score) for r in results]
 
 
 def reciprocal_rank_fusion(
     dense_results: list[tuple[str, float]],
-    sparse_results: list[tuple[dict, float]],
+    sparse_results: list[tuple[str, float]],
     chunks: list[dict],
     k: int = 60,
     top_k: int = 20,
@@ -26,8 +26,7 @@ def reciprocal_rank_fusion(
     for rank, (chunk_id, _) in enumerate(dense_results):
         rrf_scores[chunk_id] = rrf_scores.get(chunk_id, 0) + 1 / (k + rank + 1)
 
-    for rank, (chunk, _) in enumerate(sparse_results):
-        chunk_id = chunk["chunk_id"]
+    for rank, (chunk_id, _) in enumerate(sparse_results):
         rrf_scores[chunk_id] = rrf_scores.get(chunk_id, 0) + 1 / (k + rank + 1)
 
     sorted_ids = sorted(rrf_scores, key=rrf_scores.get, reverse=True)[:top_k]

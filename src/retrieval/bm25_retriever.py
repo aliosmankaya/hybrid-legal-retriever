@@ -11,8 +11,8 @@ def load_chunks(jsonl_path: str) -> list[dict]:
 
 
 def tokenize_tr(text: str) -> list[str]:
-    text = text.lower()
-    text = re.sub(r"[^\w\s]", " ", text)
+    text = text.replace("İ", "i").replace("I", "ı").lower()
+    text = re.sub(r"[^a-zçğıöşü0-9\s]", " ", text)
     return text.split()
 
 
@@ -36,9 +36,8 @@ def load_bm25_index(path: str) -> tuple[BM25Okapi, list[dict]]:
 
 def bm25_search(
     query: str, bm25: BM25Okapi, chunks: list[dict], top_k: int = 20
-) -> list[tuple[dict, float]]:
+) -> list[tuple[str, float]]:
     tokenized_query = tokenize_tr(query)
     scores = bm25.get_scores(tokenized_query)
     scored = sorted(enumerate(scores), key=lambda x: x[1], reverse=True)[:top_k]
-
-    return [(chunks[idx], float(score)) for idx, score in scored]
+    return [(chunks[idx]["chunk_id"], float(score)) for idx, score in scored]
