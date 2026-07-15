@@ -10,6 +10,8 @@ from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, PointStruct, VectorParams
 from sentence_transformers import SentenceTransformer
 
+from .bm25_retriever import create_bm25_index, save_bm25_index
+
 
 def chunking(file_name: str, law_name: str):
     texts = []
@@ -75,3 +77,7 @@ def indexing(law_name: str):
         )
     ]
     client.upsert(collection_name=law_name, points=points)
+
+    # Create & Save BM25 Index
+    bm25 = create_bm25_index(chunks=chunks)
+    save_bm25_index(bm25=bm25, chunks=chunks, law_name=law_name)
