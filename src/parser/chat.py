@@ -4,4 +4,4 @@ from pydantic import BaseModel
 class Chat(BaseModel):
     query: str
     law_name: str
-    limit: int
+    limit: int = 20

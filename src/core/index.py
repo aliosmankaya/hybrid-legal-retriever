@@ -1,3 +1,4 @@
+import glob
 import json
 import os
 import re
@@ -13,9 +14,12 @@ from sentence_transformers import SentenceTransformer
 from .bm25_retriever import create_bm25_index, save_bm25_index
 
 
-def chunking(file_name: str, law_name: str):
+def chunking(law_name: str):
+    path = f"{os.getcwd()}/data/{law_name}/"
+    file_path = glob.glob(path + "upload/*.pdf")[0]
+
     texts = []
-    with pdfplumber.open(file_name) as pdf:
+    with pdfplumber.open(file_path) as pdf:
         for page in pdf.pages:
             text = page.extract_text()
             texts.append(text)
@@ -35,9 +39,7 @@ def chunking(file_name: str, law_name: str):
             }
         )
 
-    with open(
-        os.getcwd() + f"/data/{law_name}/chunks/chunks.jsonl", "w", encoding="utf-8"
-    ) as f:
+    with open(path + "chunks.jsonl", "w", encoding="utf-8") as f:
         for chunk in chunks:
             f.write(json.dumps(chunk, ensure_ascii=False) + "\n")
 
@@ -79,5 +81,6 @@ def indexing(law_name: str):
     client.upsert(collection_name=law_name, points=points)
 
     # Create & Save BM25 Index
+    chunks = chunks.to_dict(orient="records")
     bm25 = create_bm25_index(chunks=chunks)
     save_bm25_index(bm25=bm25, chunks=chunks, law_name=law_name)

@@ -14,12 +14,22 @@ def invoke(query: str, law_name: str, limit: int):
     model = ChatOpenRouter(model=model_name, api_key=api_key)
 
     results = retriever(query=query, law_name=law_name, limit=limit)
-    context = "\n\n".join(r.payload["text"] for r in results)
+    context = "\n\n".join(r["text"] for r in results)
 
     prompt = ChatPromptTemplate.from_messages(
         [
-            ("system", "Sen bir Türk Hukuku asistanısın."),
-            ("user", f"Bağlam:\n{context}\n\nSoru: {query}"),
+            (
+                "system",
+                "Sen uzman bir Türk Hukuku yapay zeka asistanısın. Görevin, kullanıcı sorularını "
+                "yalnızca sana verilen hukuki bağlamı (kanun maddeleri, yargıtay kararları vb.) kullanarak "
+                "doğru, tarafsız ve profesyonel bir şekilde yanıtlamaktır.\n\n"
+                "Uyman gereken katı kurallar:\n"
+                "1. Yalnızca verilen 'Bağlam' içindeki bilgilere dayanarak cevap ver. Bağlam dışından bilgi veya kanun uydurma.\n"
+                "2. Eğer verilen bağlam soruyu cevaplamak için yetersizse, bunu açıkça belirt ve 'Verilen belgelerde bu sorunun cevabı bulunmamaktadır' de.\n"
+                "3. Cevap verirken mutlaka bağlamdaki ilgili kanun adı ve madde numaralarına (örn: 2918 sayılı KTK Madde 5) atıf yap.\n"
+                "4. Yanıtının sonuna şu yasal uyarıyı ekle: 'Not: Bu yanıt yalnızca bilgilendirme amaçlıdır ve hukuki tavsiye niteliği taşımamaktadır.'",
+            ),
+            ("user", "Bağlam:\n{context}\n\nSoru: {query}"),
         ]
     )
     chain = prompt | model

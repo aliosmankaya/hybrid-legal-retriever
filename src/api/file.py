@@ -1,13 +1,10 @@
 import os
+import shutil
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends
 from fastapi.responses import JSONResponse
 
-from ..parser.file import (
-    Delete,
-    Update,
-    Upload,
-)
+from ..parser.file import Delete, Update, Upload
 
 router = APIRouter()
 
@@ -15,10 +12,10 @@ path = os.getcwd() + "/data/"
 
 
 @router.post("/upload")
-def upload_service(params: Upload):
+def upload_service(params: Upload = Depends()):
     file_name = params.file.filename
     folder_path = path + params.law_name
-    os.makedirs(folder_path, exist_ok=True)
+    os.makedirs(folder_path + "/upload", exist_ok=True)
 
     with open(f"{folder_path}/upload/{file_name}", "wb") as buffer:
         buffer.write(params.file.file.read())
@@ -39,5 +36,5 @@ def update_service(params: Update):
 
 @router.delete("/delete")
 def delete_service(params: Delete):
-    os.remove(path=path + params.current_name)
+    shutil.rmtree(path=path + params.current_name)
     return JSONResponse(content="Deleted successfully", status_code=200)

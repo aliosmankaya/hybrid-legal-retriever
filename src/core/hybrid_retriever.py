@@ -3,7 +3,7 @@ from .dense_retriever import retriever as dense_retriever
 from .helper import load_chunks
 
 
-def reciprocal_rank_fusion(bm25_results, dense_results, chunks, k, limit):
+def reciprocal_rank_fusion(bm25_results, dense_results, chunks, limit, k: int = 60):
     rrf_scores = {}
     for rank, (chunk_id, _) in enumerate(bm25_results):
         rrf_scores[chunk_id] = rrf_scores.get(chunk_id, 0) + 1 / (k + rank + 1)

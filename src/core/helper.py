@@ -10,6 +10,6 @@ def tokenize_tr(text: str) -> list[str]:
 
 
 def load_chunks(law_name: str):
-    path = os.get_cwd() + "/data/" + law_name + "/chunks/chunks.jsonl"
+    path = f"{os.getcwd()}/data/{law_name}/chunks.jsonl"
     with open(path, encoding="utf-8") as f:
         return [json.loads(line) for line in f]

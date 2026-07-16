@@ -9,7 +9,7 @@ router = APIRouter()
 
 @router.post("/chunking")
 def chunking_service(params: Chunk):
-    chunking(file_name=params.file_name, law_name=params.law_name)
+    chunking(law_name=params.law_name)
     return JSONResponse(content="Chunking successfully", status_code=200)
 
 

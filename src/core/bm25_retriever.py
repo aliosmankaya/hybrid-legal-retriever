@@ -12,13 +12,13 @@ def create_bm25_index(chunks: list[dict]):
 
 
 def save_bm25_index(bm25: BM25Okapi, chunks: list[dict], law_name: str):
-    path = os.getcwd() + "/data/" + law_name
+    path = f"{os.getcwd()}/data/{law_name}/bm25_index.pkl"
     with open(path, "wb") as f:
         pickle.dump({"bm25": bm25, "chunks": chunks}, f)
 
 
 def load_bm25_index(law_name: str):
-    path = os.getcwd() + "/data/" + law_name
+    path = f"{os.getcwd()}/data/{law_name}/bm25_index.pkl"
     with open(path, "rb") as f:
         data = pickle.load(f)
     return data["bm25"], data["chunks"]
