@@ -1,6 +1,6 @@
 # Hybrid Legal Retriever
 
-A production-ready **hybrid RAG (Retrieval-Augmented Generation) pipeline for Turkish legal documents**, combining sparse (BM25) and dense (Qdrant vector) retrieval fused with Reciprocal Rank Fusion (RRF), an optional cross-encoder reranker, and LLM-powered answer generation via OpenRouter.
+A production-ready **hybrid RAG (Retrieval-Augmented Generation) pipeline for Turkish legal documents**, combining sparse (BM25) and dense (Qdrant vector) retrieval fused with Reciprocal Rank Fusion (RRF), and LLM-powered answer generation via OpenRouter.
 
 The reference corpus is the **Karayolları Trafik Kanunu** (Turkish Highway Traffic Law), but the pipeline is law-agnostic — any legal PDF can be chunked, indexed, and queried.
 
@@ -10,7 +10,6 @@ The reference corpus is the **Karayolları Trafik Kanunu** (Turkish Highway Traf
 
 - **Hybrid retrieval** — combines lexical BM25 search with semantic dense search for high recall and precision on legal text.
 - **Reciprocal Rank Fusion** — rank-based fusion (`k=60`) that blends sparse and dense result lists without needing score normalization.
-- **Optional cross-encoder reranker** — `BAAI/bge-reranker-base` re-ranks the fused candidates for improved top-k relevance.
 - **Turkish-aware tokenization** — custom `tokenize_tr` normalizes Turkish characters (İ→i, I→ı) for BM25.
 - **FastAPI service** — upload PDFs, chunk by legal article (`Madde`), build indexes, and chat with the law.
 - **LLM answer generation** — grounded responses using `nvidia/nemotron-3-ultra-550b-a55b:free` via LangChain-OpenRouter, with strict "answer only from context" instructions and a legal disclaimer.
@@ -40,7 +39,6 @@ The reference corpus is the **Karayolları Trafik Kanunu** (Turkish Highway Traf
                 │        │                      │        │
                 │        └──────► RRF ──────────┘        │
                 │                  │                     │
-                │           (optional Reranker)          │
                 └──────────────────┬─────────────────────┘
                                    │ top-k chunks (context)
                             ┌──────▼──────┐
@@ -56,7 +54,6 @@ The reference corpus is the **Karayolları Trafik Kanunu** (Turkish Highway Traf
 | Sparse | `BM25Okapi` | Turkish-normalized tokens, persisted as `bm25_index.pkl` |
 | Dense | `Qdrant` + `intfloat/multilingual-e5-small` | 384-dim cosine vectors, one collection per law |
 | Fusion | Reciprocal Rank Fusion | `score += 1 / (k + rank + 1)`, `k=60` |
-| Rerank | `CrossEncoder` (`BAAI/bge-reranker-base`) | re-scores `(query, chunk)` pairs, returns top-k |
 
 ---
 
@@ -81,10 +78,6 @@ hybrid-legal-retriever/
 │   │   ├── hybrid_retriever.py  # RRF fusion
 │   │   ├── chat.py          # LLM invoke (LangChain-OpenRouter)
 │   │   └── helper.py        # tokenize_tr, load_chunks
-│   ├── retrieval/           # standalone/experimental retrieval utils
-│   │   ├── hybrid_retriever.py
-│   │   ├── bm25_retriever.py
-│   │   └── reranker.py      # CrossEncoder reranker
 │   ├── evaluation/          # metrics + synthetic question generation
 │   │   ├── metrics.py       # Hit@k, MRR, evaluate_pipeline
 │   │   └── generate_questions.py
@@ -108,7 +101,6 @@ hybrid-legal-retriever/
 | Vector store | Qdrant (`qdrant-client`) |
 | Embeddings | Sentence-Transformers `intfloat/multilingual-e5-small` |
 | Sparse retrieval | `rank-bm25` (BM25Okapi) |
-| Reranker | Sentence-Transformers `BAAI/bge-reranker-base` (CrossEncoder) |
 | LLM | LangChain-OpenRouter (`nvidia/nemotron-3-ultra-550b-a55b:free`) |
 | PDF parsing | `pdfplumber` |
 | Orchestration | Docker, docker-compose |
